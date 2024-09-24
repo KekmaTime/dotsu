@@ -1,0 +1,10 @@
+[manager]
+show_hidden = false 
+
+[opener]
+edit = [
+	{ run = 'nvim "$@"', block = true, for = "unix" },
+]
+play = [
+	{ run = 'mpv "$@"', orphan = true, for = "unix" },
+]

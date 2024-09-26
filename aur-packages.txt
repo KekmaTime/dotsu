@@ -8,14 +8,11 @@ downgrade
 emote
 etcher-bin
 figma-linux
-firefox-pwa
-firefox-pwa-debug
 gestures
 google-chrome-wayland-vulkan
 grimblast-git
 heroic-games-launcher-bin
 hyde-cli-git
-hyprpicker
 libinput-gestures
 libpamac-full
 mangal-git
@@ -57,3 +54,4 @@ xorg-font-utils
 yay
 yay-debug
 yazi-git
+zen-browser-bin

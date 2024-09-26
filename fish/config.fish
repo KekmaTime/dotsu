@@ -22,7 +22,7 @@ end
 
 function yt
     yt-dlp --restrict-filenames \
-           --output '%(title)s.%(ext)s' \
+           --output '%(playlist_index)s-%(title)s.%(ext)s' \
            --ignore-errors \
            --embed-subs \
            --all-subs \
@@ -65,11 +65,13 @@ function musicdw
            --sponsorblock-remove all \
            --console-title $argv
 end
+
 # List Directory
 alias pearai='PearAI'
 alias fishconf='nvim ~/.config/fish/config.fish'
 alias keys='nvim ~/.config/hypr/keybindings.conf'
 alias vim='nvim'
+alias killer='~/.scripts/killer.sh'
 alias cb='cargo build'
 alias cr='cargo run'
 alias mp3='yt-dlp -x --embed-thumbnail --audio-format mp3'
@@ -85,6 +87,7 @@ alias matrix='cmatrix'
 alias wifi='nmtui'
 alias rw='~/dotfiles/.config/waybar/toggle.sh'
 alias dot="cd ~/dotfiles"
+
 #GIT
 alias gs="git status"
 alias ga="git add"
@@ -94,12 +97,6 @@ alias gpl="git pull"
 alias gst="git stash"
 alias gsp="git stash; git pull"
 alias gcheck="git checkout"
-# EDIT NOTES
-alias l='eza -lh  --icons=auto' # long list
-alias ls='eza -1   --icons=auto' # short list
-alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
-alias ld='eza -lhD --icons=auto' # long list dirs
-alias lt='eza --icons=auto --tree' # list folder as tree
 
 # Handy change dir shortcuts
 abbr .. 'cd ..'

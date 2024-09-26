@@ -86,6 +86,7 @@ db5.3
 dbus
 dbus-broker
 dbus-broker-units
+dbus-glib
 dbus-units
 dconf
 debugedit
@@ -237,6 +238,7 @@ hyphen
 hyprcursor
 hyprland
 hyprlang
+hyprpicker
 hyprutils
 hyprwayland-scanner
 i3-wm
@@ -550,6 +552,7 @@ libvdpau
 libverto
 libvips
 libvisio
+libvlc
 libvorbis
 libvpl
 libvpx
@@ -613,6 +616,7 @@ llvm
 llvm-libs
 lm_sensors
 lmdb
+lsd
 lsof
 lua
 lua51-lpeg
@@ -1038,6 +1042,7 @@ sratom
 srt
 starship
 startup-notification
+stow
 stylelint
 subversion
 sudo

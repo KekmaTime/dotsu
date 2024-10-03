@@ -1,4 +1,6 @@
 ani-cli-git
+castersoundboard-git
+castersoundboard-git-debug
 cava
 circumflex
 cursor-bin
@@ -13,8 +15,12 @@ google-chrome-wayland-vulkan
 grimblast-git
 heroic-games-launcher-bin
 hyde-cli-git
+jetbrains-toolbox
+krunker
 libinput-gestures
 libpamac-full
+light
+light-debug
 mangal-git
 mangal-git-debug
 nvm
@@ -27,8 +33,11 @@ pamac-cli
 paru-git
 paru-git-debug
 pokemon-colorscripts-git
+portproton
 premid-git
 python-pyamdgpuinfo
+railwayapp-cli
+railwayapp-cli-debug
 smassh
 snapd
 snapd-glib

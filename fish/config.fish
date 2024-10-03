@@ -20,6 +20,10 @@ function change_dns
     end
 end
 
+function space
+    ~/.scripts/space.sh $argv
+end
+
 function yt
     yt-dlp --restrict-filenames \
            --output '%(playlist_index)s-%(title)s.%(ext)s' \

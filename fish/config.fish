@@ -25,32 +25,62 @@ function space
 end
 
 function yt
-    yt-dlp --restrict-filenames \
-           --output '%(playlist_index)s-%(title)s.%(ext)s' \
-           --ignore-errors \
-           --embed-subs \
-           --all-subs \
-           --sub-langs all,-live_chat \
-           --compat-options no-live-chat \
-           --convert-subs srt \
-           --format "bestvideo+bestaudio/best" \
-           --merge-output-format mp4 \
-           --convert-thumbnails jpg \
-           --embed-thumbnail \
-           --audio-quality 0 \
-           --add-metadata \
-           --xattrs \
-           --xattr-set-filesize \
-           --prefer-free-formats \
-           --geo-bypass \
-           --no-mark-watched \
-           --console-title \
-           --no-warnings \
-           --sponsorblock-remove all \
-           --compat-options embed-thumbnail-atomicparsley \
-           --force-overwrites \
-           --no-check-certificate \
-           $argv
+    # List available formats for the video
+    yt-dlp -F $argv[1]
+    
+    # Prompt the user to input the format they want
+    echo "Please enter the format code for the video you want to download:"
+    read -l video_format
+    
+    # Check if the selected format is "video only"
+    set -l is_video_only (yt-dlp -F $argv[1] | grep -q "^$video_format.*video only")
+    
+    if test $status -eq 0
+        # If the format is "video only", select the best audio format
+        set -l audio_format (yt-dlp -F $argv[1] | grep "audio only" | head -n 1 | awk '{print $1}')
+        echo "Selected video format is video-only. Matching with audio format $audio_format."
+        
+        # Download and merge video + audio
+        yt-dlp --restrict-filenames \
+               --output '%(playlist_index)s-%(title)s.%(ext)s' \
+               --format "$video_format+$audio_format" \
+               --merge-output-format mp4 \
+               --embed-subs \
+               --all-subs \
+               --sub-langs all,-live_chat \
+               --compat-options no-live-chat \
+               --convert-subs srt \
+               --embed-thumbnail \
+               --convert-thumbnails jpg \
+               --add-metadata \
+               --xattrs \
+               --audio-quality 0 \
+               --sponsorblock-remove all \
+               --force-overwrites \
+               --no-check-certificate \
+               $argv[1]
+    else
+        # Download the selected format (video+audio if available)
+        echo "Selected format includes both video and audio."
+        yt-dlp --restrict-filenames \
+               --output '%(playlist_index)s-%(title)s.%(ext)s' \
+               --format "$video_format" \
+               --merge-output-format mp4 \
+               --embed-subs \
+               --all-subs \
+               --sub-langs all,-live_chat \
+               --compat-options no-live-chat \
+               --convert-subs srt \
+               --embed-thumbnail \
+               --convert-thumbnails jpg \
+               --add-metadata \
+               --xattrs \
+               --audio-quality 0 \
+               --sponsorblock-remove all \
+               --force-overwrites \
+               --no-check-certificate \
+               $argv[1]
+    end
 end
 
 function musicdw

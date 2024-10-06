@@ -83,6 +83,7 @@ coreutils
 cppdap
 cryptsetup
 curl
+cython
 dav1d
 db5.3
 dbus
@@ -96,7 +97,11 @@ default-cursors
 desktop-file-utils
 device-mapper
 diffutils
+dkms
 dmenu
+dnsmasq
+docbook-xml
+docbook-xsl
 docker
 docker-compose
 double-conversion
@@ -274,6 +279,7 @@ java-runtime-common
 jbig2dec
 jbigkit
 jdk-openjdk
+jemalloc
 jq
 jre8-openjdk
 jre8-openjdk-headless
@@ -448,6 +454,7 @@ libcdr
 libcgif
 libcloudproviders
 libcolord
+libconfig
 libcups
 libcurl-gnutls
 libdaemon
@@ -699,6 +706,7 @@ lua51-lpeg
 luajit
 luit
 lv2
+lxc
 lz4
 lzo
 m4
@@ -740,11 +748,12 @@ netpbm
 nettle
 network-manager-applet
 networkmanager
+nftables
 ninja
 nlohmann-json
 nm-connection-editor
 node-gyp
-nodejs
+nodejs-lts-iron
 nodejs-nopt
 noto-fonts-emoji
 npm
@@ -754,6 +763,7 @@ nss
 numactl
 nwg-look
 obs-studio
+obsidian
 ocl-icd
 onetbb
 oniguruma
@@ -1254,6 +1264,7 @@ xorg-fonts-encodings
 xorg-mkfontscale
 xorg-server
 xorg-server-common
+xorg-server-xvfb
 xorg-setxkbmap
 xorg-xauth
 xorg-xinit

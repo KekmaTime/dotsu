@@ -94,6 +94,7 @@ dbus-units
 dconf
 debugedit
 default-cursors
+delve
 desktop-file-utils
 device-mapper
 diffutils
@@ -119,7 +120,9 @@ electron
 electron30
 electron31
 electron32
+electron33
 ell
+emacs
 enchant
 esbuild
 exiv2
@@ -174,6 +177,7 @@ gettext
 ghostscript
 giflib
 git
+gitea
 glew
 glfw
 glib-networking
@@ -190,8 +194,12 @@ gnu-free-fonts
 gnupg
 gnutls
 go
+go-tools
 gobject-introspection
 gobject-introspection-runtime
+gopls
+goreleaser
+gox
 gperftools
 gpgme
 gpm
@@ -320,6 +328,7 @@ kitty-terminfo
 kjobwidgets
 kmod
 knotifications
+ko
 kparts
 kpipewire
 kpty
@@ -564,6 +573,7 @@ libnvme
 libogg
 libomxil-bellagio
 libopenmpt
+libotf
 libp11-kit
 libpaper
 libpcap
@@ -709,6 +719,8 @@ lv2
 lxc
 lz4
 lzo
+m17n-db
+m17n-lib
 m4
 mailcap
 make
@@ -755,6 +767,7 @@ nm-connection-editor
 node-gyp
 nodejs-lts-iron
 nodejs-nopt
+noto-fonts
 noto-fonts-emoji
 npm
 npth
@@ -856,6 +869,7 @@ psmisc
 pugixml
 python
 python-appdirs
+python-argcomplete
 python-attrs
 python-autocommand
 python-beautifulsoup4
@@ -923,6 +937,7 @@ python-packaging
 python-pathspec
 python-pillow
 python-pip
+python-pipx
 python-platformdirs
 python-pluggy
 python-poetry-core
@@ -956,6 +971,7 @@ python-trove-classifiers
 python-typing_extensions
 python-uc-micro-py
 python-urllib3
+python-userpath
 python-validate-pyproject
 python-virtualenv
 python-waitress
@@ -1081,6 +1097,7 @@ rav1e
 re2
 readline
 reflector
+revive
 rhash
 ripgrep
 rnnoise
@@ -1090,6 +1107,7 @@ rsync
 rtkit
 rtmpdump
 rubberband
+ruff
 runc
 rustup
 sbc
@@ -1132,6 +1150,7 @@ sratom
 srt
 starship
 startup-notification
+staticcheck
 stow
 stylelint
 subversion
@@ -1173,6 +1192,7 @@ tree-sitter-vim
 tree-sitter-vimdoc
 tslib
 ttf-arphic-uming
+ttf-cascadia-code-nerd
 ttf-font-awesome
 ttf-indic-otf
 ttf-jetbrains-mono-nerd
@@ -1197,6 +1217,7 @@ uv
 v4l-utils
 vapoursynth
 vde2
+vi
 vid.stab
 vim
 vim-runtime
@@ -1283,11 +1304,13 @@ xwaylandvideobridge
 xxhash
 xz
 yad
+yaegi
 yajl
 yarn
 yt-dlp
 yyjson
 zbar
+zed
 zeromq
 zimg
 zix

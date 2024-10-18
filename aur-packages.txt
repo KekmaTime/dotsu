@@ -7,7 +7,8 @@ chatgpt-desktop-bin
 chatgpt-desktop-bin-debug
 circumflex
 cursor-bin
-docker-desktop
+docker-credential-pass
+docker-credential-pass-debug
 docker-desktop-debug
 downgrade
 emote
@@ -52,6 +53,8 @@ python-gbinder-debug
 python-pyamdgpuinfo
 railwayapp-cli
 railwayapp-cli-debug
+slack
+slack-debug
 smassh
 snapd
 snapd-glib
@@ -80,4 +83,3 @@ xorg-font-utils
 yay
 yay-debug
 yazi-git
-zen-browser-bin
